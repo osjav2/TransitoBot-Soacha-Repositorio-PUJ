@@ -4,7 +4,7 @@ services:
   # ============================================
   backrag:
     build:
-      context: ./backRag
+      context: ../03_Sistema_TransitoBot/backRag
       dockerfile: Dockerfile
     container_name: appchat-backrag
     restart: unless-stopped
@@ -12,9 +12,9 @@ services:
       - "8000:8000"
     volumes:
       # Persistir ChromaDB entre reinicios
-      - ./backRag/data:/app/data
+      - ../03_Sistema_TransitoBot/backRag/data:/app/data
     env_file:
-      - ./backRag/.env.production
+      - ../03_Sistema_TransitoBot/backRag/.env.production
     depends_on:
       apistool:
         condition: service_healthy
@@ -32,14 +32,14 @@ services:
   # ============================================
   apistool:
     build:
-      context: ./apistool
+      context: ../03_Sistema_TransitoBot/apistool
       dockerfile: Dockerfile
     container_name: appchat-apistool
     restart: unless-stopped
     ports:
       - "8076:8076"
     env_file:
-      - ./apistool/.env.production
+      - ../03_Sistema_TransitoBot/apistool/.env.production
     networks:
       - appchat-network
     healthcheck:
@@ -54,7 +54,7 @@ services:
   # ============================================
   rasa:
     build:
-      context: ./rasa
+      context: ../03_Sistema_TransitoBot/rasa
       dockerfile: Dockerfile
     container_name: appchat-rasa
     restart: unless-stopped
@@ -62,12 +62,10 @@ services:
       - "5005:5005"  # RASA Server
       - "5055:5055"  # RASA Actions Server
     volumes:
-      # IMPORTANTE: Modelos pre-entrenados deben estar en ./rasa/models/
-      # Entrenar en máquina local y copiar el .tar.gz aquí
-      # El contenedor NO entrena, solo consume el modelo del volumen
-      - ./rasa/models:/app/models
+      # IMPORTANTE: Modelos pre-entrenados
+      - ../03_Sistema_TransitoBot/rasa/models:/app/models
     env_file:
-      - ./rasa/.env.production
+      - ../03_Sistema_TransitoBot/rasa/.env.production
     networks:
       - appchat-network
     healthcheck:
@@ -82,14 +80,14 @@ services:
   # ============================================
   routerback:
     build:
-      context: ./routerback
+      context: ../03_Sistema_TransitoBot/routerback
       dockerfile: Dockerfile
     container_name: appchat-routerback
     restart: unless-stopped
     ports:
       - "8080:8080"
     env_file:
-      - ./routerback/.env.production
+      - ../03_Sistema_TransitoBot/routerback/.env.production
     depends_on:
       backrag:
         condition: service_healthy
@@ -109,14 +107,14 @@ services:
   # ============================================
   frontend:
     build:
-      context: ./frontend
+      context: ../03_Sistema_TransitoBot/frontend
       dockerfile: Dockerfile
     container_name: appchat-frontend
     restart: unless-stopped
     ports:
       - "5173:80"  # Mapear 5173 (dev) a 80 (nginx)
     env_file:
-      - ./frontend/.env.production
+      - ../03_Sistema_TransitoBot/frontend/.env.production
     depends_on:
       - routerback
     networks:
@@ -137,8 +135,7 @@ networks:
     name: appchat-network
 
 # ============================================
-# Named Volumes (declarados pero no usados actualmente)
-# Se usan bind mounts en su lugar para facilitar desarrollo
+# Named Volumes
 # ============================================
 volumes:
   backrag-data:
