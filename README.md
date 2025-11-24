@@ -29,36 +29,47 @@
 
 ---
 
-## 🧭 Panel de Navegación
+## 🧭 Arquitectura del trabajo de grado
 
-Explora los componentes de este producto de investigación:
+Acceso rápido a los componentes del producto:
 
 <div align="center">
 <table>
   <tr>
     <td align="center" width="25%">
       <a href="./01_Investigacion_Academica">
-        <img src="https://img.icons8.com/clouds/100/book.png" width="60px"><br>
+        <img src="https://img.icons8.com/fluency/96/learning.png" width="50px"><br>
+        <br>
         <b>01. Investigación</b>
-      </a><br>Tesis y Metodología
+      </a><br>
+      <sub>Fundamentación & Tesis</sub>
     </td>
+
     <td align="center" width="25%">
       <a href="./02_Base_Conocimiento_Legal">
-        <img src="https://img.icons8.com/clouds/100/law.png" width="60px"><br>
+        <img src="https://img.icons8.com/fluency/96/law.png" width="50px"><br>
+        <br>
         <b>02. Base Legal</b>
-      </a><br>Normativa (Fuente RAG)
+      </a><br>
+      <sub>Corpus Normativo (RAG)</sub>
     </td>
+
     <td align="center" width="25%">
       <a href="./03_Sistema_TransitoBot">
-        <img src="https://img.icons8.com/clouds/100/code.png" width="60px"><br>
-        <b>03. Sistema (Código)</b>
-      </a><br>Frontend, Backend, AI
+        <img src="https://img.icons8.com/fluency/96/source-code.png" width="50px"><br>
+        <br>
+        <b>03. Código Fuente</b>
+      </a><br>
+      <sub>React • FastAPI • Rasa</sub>
     </td>
+
     <td align="center" width="25%">
       <a href="./04_Despliegue_Arquitectura">
-        <img src="https://img.icons8.com/clouds/100/server.png" width="60px"><br>
-        <b>04. Despliegue</b>
-      </a><br>Docker y Arquitectura
+        <img src="https://img.icons8.com/fluency/96/server.png" width="50px"><br>
+        <br>
+        <b>04. Infraestructura</b>
+      </a><br>
+      <sub>Docker • Orquestación</sub>
     </td>
   </tr>
 </table>
