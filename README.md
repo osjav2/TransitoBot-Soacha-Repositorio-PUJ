@@ -9,14 +9,17 @@
 <h1>🤖 TuGuía_Vial / TransitoBot</h1>
 <h3>Asistente Inteligente de Normativa Vial para Soacha, Cundinamarca</h3>
 
+<div align="center">
 
-![Estado](https://img.shields.io/badge/Estado-Tesis_Finalizada-success?style=for-the-badge&logo=github)
+[![Estado](https://img.shields.io/badge/Estado-Tesis_Finalizada-2ea44f?style=for-the-badge&logo=github)](./01_Investigacion_Academica)
 
 [![Stack](https://img.shields.io/badge/Stack-Rasa_|_FastAPI_|_React-blueviolet?style=for-the-badge&logo=python)](./03_Sistema_TransitoBot)
 
-[![AI](https://img.shields.io/badge/AI-RAG_+_Claude_Haiku-orange?style=for-the-badge&logo=anthropic)](./03_Sistema_TransitoBot/backRag)
+[![AI](https://img.shields.io/badge/AI-RAG_+_Claude_Haiku-FF9900?style=for-the-badge&logo=anthropic)](./03_Sistema_TransitoBot/backRag)
 
-[![Deploy](https://img.shields.io/badge/Despliegue-Docker_Compose-blue?style=for-the-badge&logo=docker)](./04_Despliegue_Arquitectura)
+[![Deploy](https://img.shields.io/badge/Despliegue-Docker_Compose-0db7ed?style=for-the-badge&logo=docker)](./04_Despliegue_Arquitectura)
+
+</div>
 
 <br/>
 
