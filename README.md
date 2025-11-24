@@ -1,7 +1,8 @@
 <div align="center">
 
 <img src="./01_Investigacion_Academica/Assets/logotipoTransitoBot.jpeg" alt="Logo oficial TransitoBot" width="29%">
-
+<br/>
+<br/>
 <img src="./01_Investigacion_Academica/Assets/baner_transito_o_bot_de_transito.jpg" alt="Logo oficial TransitoBot" width="29%">
 
 <br/>
