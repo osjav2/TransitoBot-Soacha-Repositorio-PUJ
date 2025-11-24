@@ -101,13 +101,11 @@ El sistema implementa un patrón de **Microservicios Orquestados**, integrando u
 
 ```mermaid
 graph TD;
-    %% Estilos de Nodos (Optimizados para Tema Claro)
-    %% Rellenos pastel suaves y texto negro para máximo contraste
-    classDef front fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:black; %% Azul Pastel
-    classDef logic fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px,color:black; %% Verde Pastel
-    classDef ai fill:#FFF3E0,stroke:#EF6C00,stroke-width:2px,color:black;   %% Naranja Pastel
-    classDef db fill:#F3E5F5,stroke:#7B1FA2,stroke-width:2px,color:black;   %% Púrpura Pastel
-    classDef user fill:#FFFFFF,stroke:#37474F,stroke-width:2px,color:black; %% Blanco Puro
+    classDef front fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:black;
+    classDef logic fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px,color:black;
+    classDef ai fill:#FFF3E0,stroke:#EF6C00,stroke-width:2px,color:black;
+    classDef db fill:#F3E5F5,stroke:#7B1FA2,stroke-width:2px,color:black;
+    classDef user fill:#FFFFFF,stroke:#37474F,stroke-width:2px,color:black;
 
     User((👤 Ciudadano)):::user -->|HTTPS| Front[💻 Frontend React+Vite]:::front;
     Front -->|REST API| Router[🚦 RouterBack FastAPI]:::logic;
