@@ -2,37 +2,36 @@
 
 Este directorio consolida los artefactos documentales, la evidencia estadística y el marco estratégico que sustentan el desarrollo del prototipo **TransitoBot**.
 
-## 📂 Índice de Documentos
+## 📂 Documentos Principales
 
-A continuación se detallan los recursos disponibles en esta sección:
-
-| Documento | Formato | Descripción |
+| Documento | Formato | Ubicación |
 | :--- | :---: | :--- |
-| **[Metodología del Proyecto](./METODOLOGIA.md)** | 📝 MD | Descripción del enfoque de ingeniería y fases del proyecto. |
-| **[Plan de Desarrollo Soacha](./PDSoacha_Acuerdo_13_-_2024.pdf)** | 🏛️ PDF | **Marco Estratégico.** Acuerdo oficial 2024-2027 (Fuente primaria). |
-| **[Ficha Técnica SIMIT](./Ficha-Tecnica-Soacha.pdf)** | 📊 PDF | **Evidencia del Problema.** Estadísticas de infracciones 2023. |
-| **[Análisis de Oportunidades](./Puntos%20a%20favor%20soacha%20extraido%20del%20plan%20de%20desarrollo%20municipio.docx)** | 📄 Docx | Extracción de metas clave del municipio (Ciudad Inteligente). |
-| **[Memoria de Tesis (Pendiente)]()** | 📕 PDF | Documento final de la Maestría (Próximamente). |
+| **[Metodología del Proyecto](./METODOLOGIA.md)** | 📝 MD | Raíz |
+| **[Memoria de Tesis (Pendiente)]()** | 📕 PDF | Raíz |
+
+## 🗃️ Soportes y Evidencia (Contexto)
+
+Documentos de soporte alojados en la subcarpeta `Soportes_Contexto`:
+
+| Documento | Descripción |
+| :--- | :--- |
+| **[Plan de Desarrollo Soacha](./Soportes_Contexto/PDSoacha_Acuerdo_13_-_2024.pdf)** | **Marco Estratégico.** Acuerdo oficial 2024-2027. |
+| **[Ficha Técnica SIMIT](./Soportes_Contexto/Ficha-Tecnica-Soacha.pdf)** | **Evidencia del Problema.** Estadísticas 2023. |
+| **[Análisis de Oportunidades](./Soportes_Contexto/Puntos%20a%20favor%20soacha%20extraido%20del%20plan%20de%20desarrollo%20municipio.docx)** | Extracción de metas clave (Ciudad Inteligente). |
 
 ---
 
 ## 🏛️ Justificación Estratégica
 
-El proyecto se alinea con el **Acuerdo Municipal No. 13 de 2024 (Plan de Desarrollo)**, respondiendo a necesidades explícitas de la administración:
-
-* **Ciudad Inteligente:** Modernización de servicios mediante tecnología ([Ref. Plan de Desarrollo, pág. 371]).
-* **Meta SPOT-14:** Creación de herramientas tecnológicas para el emprendimiento y servicio ciudadano.
-* **Capacitación:** Atención a la demanda comunitaria en formación técnica sobre normas.
+El proyecto se alinea con el **Acuerdo Municipal No. 13 de 2024**, respondiendo a:
+* **Ciudad Inteligente:** Modernización de servicios ([Ref. Pág. 371]).
+* **Meta SPOT-14:** Herramientas tecnológicas para el ciudadano.
 
 ---
 
 ## 📉 Contexto de la Problemática
 
-Según la **Ficha Técnica SIMIT 2023** adjunta en este directorio:
-
-> 🚨 **Dato Crítico:** El municipio experimentó un **aumento del 75%** en órdenes de comparendo respecto al año anterior (9,640 casos), evidenciando una desconexión estructural entre la ciudadanía y la normativa vigente.
+> 🚨 **Dato Crítico:** Aumento del **75%** en órdenes de comparendo (9,640 casos), según la Ficha Técnica SIMIT adjunta.
 
 ---
-
-### 📌 Nota de Navegación
-Para visualizar los documentos PDF directamente en el navegador, haga clic en el nombre del archivo en la tabla superior.
+*Nota: Los documentos de soporte se encuentran organizados en subdirectorios para facilitar la lectura.*
