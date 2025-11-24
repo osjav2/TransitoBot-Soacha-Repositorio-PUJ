@@ -1,7 +1,7 @@
 # TransitoBot-Soacha-Repositorio-PUJ
 <div align="center">
 
-<img src="./01_Investigacion_Academica/EC381959-8F90-405C-A843-FA705D85F3DF.jpeg" alt="Logo oficial TransitoBot" width="100%">
+<img src="./01_Investigacion_Academica/EC381959-8F90-405C-A843-FA705D85F3DF.jpeg" alt="Logo oficial TransitoBot" width="30%">
 
 <br/>
 <br/>
