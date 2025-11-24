@@ -101,11 +101,13 @@ El sistema implementa un patrón de **Microservicios Orquestados**, integrando u
 
 ```mermaid
 graph TD;
-    classDef front fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:black;
-    classDef logic fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px,color:black;
-    classDef ai fill:#FFF3E0,stroke:#EF6C00,stroke-width:2px,color:black;
-    classDef db fill:#F3E5F5,stroke:#7B1FA2,stroke-width:2px,color:black;
-    classDef user fill:#FFFFFF,stroke:#37474F,stroke-width:2px,color:black;
+    %% Estilos de Nodos (DARK MODE TECH)
+    %% Fondos oscuros con bordes neón para alto contraste profesional
+    classDef front fill:#0c2546,stroke:#38bdf8,stroke-width:2px,color:white;   %% Azul Profundo + Borde Cyan
+    classDef logic fill:#0f3928,stroke:#4ade80,stroke-width:2px,color:white;   %% Verde Bosque + Borde Lima
+    classDef ai fill:#381808,stroke:#fb923c,stroke-width:2px,color:white;      %% Café Oscuro + Borde Naranja
+    classDef db fill:#2e1065,stroke:#a78bfa,stroke-width:2px,color:white;      %% Púrpura Oscuro + Borde Lila
+    classDef user fill:#1f2937,stroke:#ffffff,stroke-width:2px,color:white;    %% Gris Oscuro + Borde Blanco
 
     User((👤 Ciudadano)):::user -->|HTTPS| Front[💻 Frontend React+Vite]:::front;
     Front -->|REST API| Router[🚦 RouterBack FastAPI]:::logic;
@@ -127,3 +129,6 @@ graph TD;
     
     BackRag --> Router;
     Router --> Front;
+    
+    %% Conectores en blanco para que se vean bien en fondo oscuro
+    linkStyle default stroke:#9ca3af,stroke-width:1px;
