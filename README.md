@@ -101,18 +101,16 @@ El sistema implementa un patrón de **Microservicios Orquestados**, integrando u
 
 ```mermaid
 graph TD;
-    %% Estilos de Nodos (DARK MODE TECH)
-    %% Fondos oscuros con bordes neón para alto contraste profesional
-    classDef front fill:#0c2546,stroke:#38bdf8,stroke-width:2px,color:white;   %% Azul Profundo + Borde Cyan
-    classDef logic fill:#0f3928,stroke:#4ade80,stroke-width:2px,color:white;   %% Verde Bosque + Borde Lima
-    classDef ai fill:#381808,stroke:#fb923c,stroke-width:2px,color:white;      %% Café Oscuro + Borde Naranja
-    classDef db fill:#2e1065,stroke:#a78bfa,stroke-width:2px,color:white;      %% Púrpura Oscuro + Borde Lila
-    classDef user fill:#1f2937,stroke:#ffffff,stroke-width:2px,color:white;    %% Gris Oscuro + Borde Blanco
+    classDef front fill:#0c2546,stroke:#38bdf8,stroke-width:2px,color:white;
+    classDef logic fill:#0f3928,stroke:#4ade80,stroke-width:2px,color:white;
+    classDef ai fill:#381808,stroke:#fb923c,stroke-width:2px,color:white;
+    classDef db fill:#2e1065,stroke:#a78bfa,stroke-width:2px,color:white;
+    classDef user fill:#1f2937,stroke:#ffffff,stroke-width:2px,color:white;
 
     User((👤 Ciudadano)):::user -->|HTTPS| Front[💻 Frontend React+Vite]:::front;
     Front -->|REST API| Router[🚦 RouterBack FastAPI]:::logic;
     
-    subgraph "Core de Decisión (Orquestador)"
+    subgraph "Core de Decisión"
         Router -->|1. Clasificación| Rasa[🤖 RASA NLU]:::logic;
         Rasa -- "Confianza > 0.8" --> Router;
         Rasa -- "Confianza Baja (Fallback)" --> Router;
@@ -120,7 +118,7 @@ graph TD;
     
     Router -->|2. Consulta Compleja| BackRag[🧠 BackRag Service]:::ai;
     
-    subgraph "Retrieval Augmented Generation (RAG)"
+    subgraph "Retrieval Augmented Generation"
         BackRag -->|Query Vectorial| Chroma[(🗄️ ChromaDB)]:::db;
         Chroma -- "Contexto (Ley 769)" --> BackRag;
         BackRag -->|Prompt + Contexto| Claude{{☁️ Claude AI API}}:::ai;
@@ -130,5 +128,4 @@ graph TD;
     BackRag --> Router;
     Router --> Front;
     
-    %% Conectores en blanco para que se vean bien en fondo oscuro
     linkStyle default stroke:#9ca3af,stroke-width:1px;
