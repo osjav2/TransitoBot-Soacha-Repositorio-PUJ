@@ -39,7 +39,6 @@ Acceso rápido a los componentes del producto:
       </a><br>
       <sub>Fundamentación & Tesis</sub>
     </td>
-
     <td align="center" width="25%">
       <a href="./02_Base_Conocimiento_Legal">
         <img src="https://img.icons8.com/fluency/96/law.png" width="50px"><br>
@@ -48,7 +47,6 @@ Acceso rápido a los componentes del producto:
       </a><br>
       <sub>Corpus Normativo (RAG)</sub>
     </td>
-
     <td align="center" width="25%">
       <a href="./03_Sistema_TransitoBot">
         <img src="https://img.icons8.com/fluency/96/source-code.png" width="50px"><br>
@@ -57,7 +55,6 @@ Acceso rápido a los componentes del producto:
       </a><br>
       <sub>React • FastAPI • Rasa</sub>
     </td>
-
     <td align="center" width="25%">
       <a href="./04_Despliegue_Arquitectura">
         <img src="https://img.icons8.com/fluency/96/server.png" width="50px"><br>
@@ -69,7 +66,6 @@ Acceso rápido a los componentes del producto:
   </tr>
 </table>
 </div>
-
 ---
 
 ## 🏙️ Problemática: El Caso Soacha
