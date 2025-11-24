@@ -1,8 +1,7 @@
 <div align="center">
+<img src="./01_Investigacion_Academica/Assets/logotipoTransitoBot.jpeg" alt="Logo oficial" width="28%">
 
-<img src="./01_Investigacion_Academica/Assets/logotipoTransitoBot.jpeg" alt="Banner Carretera" width="29%">
-<br/>
-<img src="./01_Investigacion_Academica/Assets/baner_transito_o_bot_de_transito.jpg" alt="Logo oficial TransitoBot" width="100%">
+<img src="./01_Investigacion_Academica/Assets/baner_transito_o_bot_de_transito.jpg" alt="Banner" width="100%" height="auto">
 <br/>
 
 <h1>🤖 TuGuía_Vial / TransitoBot</h1>
