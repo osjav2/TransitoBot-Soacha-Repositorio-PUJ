@@ -1,7 +1,7 @@
 # TransitoBot-Soacha-Repositorio-PUJ
 <div align="center">
 
-<img src="https://via.placeholder.com/1280x640.png?text=TuGuia+Vial+Soacha+-+Asistente+IA" alt="Banner TransitoBot" width="100%">
+<img src="./01_Investigacion_Academica/logo_transitobot.png" alt="Logo oficial TransitoBot" width="100%">
 
 <br/>
 <br/>
