@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./01_Investigacion_Academica/EC381959-8F90-405C-A843-FA705D85F3DF.jpeg" alt="Logo oficial TransitoBot" width="20%">
+<img src="./01_Investigacion_Academica/EC381959-8F90-405C-A843-FA705D85F3DF.jpeg" alt="Logo oficial TransitoBot" width="27%">
 
 <br/>
 <br/>
