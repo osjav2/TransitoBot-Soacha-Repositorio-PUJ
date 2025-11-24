@@ -26,84 +26,104 @@
 
 ## 🧭 Arquitectura del trabajo de grado
 
-Acceso rápido a los componentes del producto:
+Acceso rápido a los componentes del producto de investigación:
 
 <div align="center">
 <table>
-  <tr>
-    <td align="center" width="25%">
-      <a href="./01_Investigacion_Academica">
-        <img src="https://img.icons8.com/fluency/96/learning.png" width="50px"><br>
-        <br>
-        <b>01. Investigación</b>
-      </a><br>
-      <sub>Fundamentación & Tesis</sub>
-    </td>
-    <td align="center" width="25%">
-      <a href="./02_Base_Conocimiento_Legal">
-        <img src="https://img.icons8.com/fluency/96/law.png" width="50px"><br>
-        <br>
-        <b>02. Base Legal</b>
-      </a><br>
-      <sub>Corpus Normativo (RAG)</sub>
-    </td>
-    <td align="center" width="25%">
-      <a href="./03_Sistema_TransitoBot">
-        <img src="https://img.icons8.com/fluency/96/source-code.png" width="50px"><br>
-        <br>
-        <b>03. Código Fuente</b>
-      </a><br>
-      <sub>React • FastAPI • Rasa</sub>
-    </td>
-    <td align="center" width="25%">
-      <a href="./04_Despliegue_Arquitectura">
-        <img src="https://img.icons8.com/fluency/96/server.png" width="50px"><br>
-        <br>
-        <b>04. Infraestructura</b>
-      </a><br>
-      <sub>Docker • Orquestación</sub>
-    </td>
-  </tr>
+<tr>
+<td align="center" width="25%">
+<a href="./01_Investigacion_Academica">
+<img src="https://img.icons8.com/fluency/96/learning.png" width="50px"><br>
+<br>
+<b>01. Investigación</b>
+</a><br>
+<sub>Fundamentación & Tesis</sub>
+</td>
+<td align="center" width="25%">
+<a href="./02_Base_Conocimiento_Legal">
+<img src="https://img.icons8.com/fluency/96/law.png" width="50px"><br>
+<br>
+<b>02. Base Legal</b>
+</a><br>
+<sub>Corpus Normativo (RAG)</sub>
+</td>
+<td align="center" width="25%">
+<a href="./03_Sistema_TransitoBot">
+<img src="https://img.icons8.com/fluency/96/source-code.png" width="50px"><br>
+<br>
+<b>03. Código Fuente</b>
+</a><br>
+<sub>React • FastAPI • Rasa</sub>
+</td>
+<td align="center" width="25%">
+<a href="./04_Despliegue_Arquitectura">
+<img src="https://img.icons8.com/fluency/96/server.png" width="50px"><br>
+<br>
+<b>04. Infraestructura</b>
+</a><br>
+<sub>Docker • Orquestación</sub>
+</td>
+</tr>
 </table>
 </div>
+
 ---
 
 ## 🏙️ Problemática: El Caso Soacha
 
 En 2023, Soacha impuso **9,640 órdenes de comparendo**, evidenciando una brecha crítica entre la complejidad de la ley y el conocimiento del ciudadano.
 
-| Indicador | Dato 2023 | Interpretación |
-| :--- | :--- | :--- |
-| **Crecimiento Infracciones** | 📈 **+75%** | Incremento drástico respecto a 2022. |
-| **Infracción C14** | 🚗 **4,901 casos** | Transitar en sitios/horas prohibidas (Falta de información). |
-| **Impacto Social** | 👥 **700k Habitantes** | Afectados por congestión y falta de cultura vial. |
+> 🚨 **Insight Crítico:** El incremento del **75%** en un solo año no refleja solo imprudencia, sino una **falla estructural** en el acceso a la información normativa.
+
+| Indicador | Dato 2023 | Interpretación Técnica |
+| :--- | :---: | :--- |
+| **Tendencia** | 📈 **+75%** | Crecimiento exponencial respecto al año anterior (2022). |
+| **Infracción Top (C14)** | 🚗 **4,901** | *Transitar por sitios restringidos.* Evidencia falta de conocimiento espacial/temporal. |
+| **Población Afectada** | 👥 **~700k** | Habitantes impactados por congestión derivada de la incultura vial. |
 
 *Fuente: Federación Colombiana de Municipios (FCM) - SIMIT.*
 
 ---
 
+## 🏛️ Alineación Estratégica
+
+El proyecto se articula con el **Plan de Desarrollo "El desarrollo es el plan" (2024-2027)**:
+
+* ✅ **Ciudad Inteligente:** Modernización de servicios mediante IA ([Ref. pág. 371]).
+* ✅ **Meta SPOT-14:** Innovación tecnológica y banco de emprendimiento.
+* ✅ **Educación:** Herramienta de capacitación técnica masiva para la comunidad.
+
+---
+
 ## 🧠 Arquitectura Híbrida del Sistema
 
-El sistema implementa una arquitectura de microservicios orquestada que decide inteligentemente entre respuestas predefinidas (Rasa) y generación basada en contexto legal (RAG con ChromaDB).
+El sistema implementa un patrón de **Microservicios Orquestados**, integrando un motor determinista (NLU) con uno generativo (LLM).
 
 ```mermaid
 graph TD;
-    User((👤 Ciudadano)) -->|HTTP| Front[💻 Frontend React+Vite];
-    Front -->|REST| Router[🚦 RouterBack FastAPI];
+    %% Estilos de Nodos
+    classDef front fill:#e1f5fe,stroke:#01579b,stroke-width:2px,color:black;
+    classDef logic fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:black;
+    classDef ai fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:black;
+    classDef db fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:black;
+    classDef user fill:#ffffff,stroke:#333,stroke-width:1px,color:black;
+
+    User((👤 Ciudadano)):::user -->|HTTPS| Front[💻 Frontend React+Vite]:::front;
+    Front -->|REST API| Router[🚦 RouterBack FastAPI]:::logic;
     
-    subgraph "Core de Decisión"
-    Router -->|1. Intento?| Rasa[🤖 RASA NLU];
-    Rasa -- "Si tiene confianza" --> Router;
-    Rasa -- "Fallback / No sabe" --> Router;
+    subgraph "Core de Decisión (Orquestador)"
+        Router -->|1. Clasificación| Rasa[🤖 RASA NLU]:::logic;
+        Rasa -- "Confianza > 0.8" --> Router;
+        Rasa -- "Confianza Baja (Fallback)" --> Router;
     end
     
-    Router -->|2. Consulta Compleja| BackRag[🧠 BackRag System];
+    Router -->|2. Consulta Compleja| BackRag[🧠 BackRag Service]:::ai;
     
-    subgraph "Retrieval Augmented Generation"
-    BackRag -->|Query| Chroma[(🗄️ ChromaDB)];
-    Chroma -- "Contexto Legal (CNT)" --> BackRag;
-    BackRag -->|Prompt + Contexto| Claude[☁️ Claude AI API];
-    Claude -->|Respuesta Natural| BackRag;
+    subgraph "Retrieval Augmented Generation (RAG)"
+        BackRag -->|Query Vectorial| Chroma[(🗄️ ChromaDB)]:::db;
+        Chroma -- "Contexto (Ley 769)" --> BackRag;
+        BackRag -->|Prompt + Contexto| Claude{{☁️ Claude AI API}}:::ai;
+        Claude -->|Respuesta Natural| BackRag;
     end
     
     BackRag --> Router;
