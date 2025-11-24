@@ -18,7 +18,7 @@
 <br/>
 <br/>
 
-> **Resumen Ejecutivo:** Solución de Inteligencia Artificial Híbrida (NLU + Generativa) diseñada para democratizar el acceso a la normativa de tránsito en Soacha, abordando el incremento del **75% en infracciones** durante 2023.
+> Resumen Ejecutivo: Prototipo funcional de inclusión tecnológica diseñado para educar y empoderar al ciudadano de Soacha. Implementa una arquitectura de IA Híbrida capaz de interpretar la complejidad legal y entregarla en lenguaje natural, respondiendo al desconocimiento normativo mediante una solución escalable y de alto impacto social.
 
 </div>
 
