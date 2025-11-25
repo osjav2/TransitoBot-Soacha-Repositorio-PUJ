@@ -40,7 +40,7 @@ Alineación con las metas gubernamentales y normativas.
 | Documento | Descripción |
 | :--- | :--- |
 | **[Plan de Desarrollo](./Soportes_Contexto/PDSoacha_Acuerdo_13_-_2024.pdf)** | Acuerdo Municipal 2024-2027. |
-| **[Análisis de Metas](./Soportes_Contexto/Analisis_Oportunidades.docx)** | Extracción de oportunidades "Ciudad Inteligente". |
+| **[Análisis de Metas](./Soportes_Contexto/Analisis_Oportunidades.pdf)** | Extracción de oportunidades "Ciudad Inteligente". |
 | **[Resolución Tipo](./Soportes_Contexto/Resolucion_Ejemplo_Embriaguez.pdf)** | Ejemplo real de acto administrativo de tránsito. |
 ---
 
