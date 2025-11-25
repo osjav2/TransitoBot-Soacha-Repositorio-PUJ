@@ -1,7 +1,7 @@
 # Base de Conocimiento Legal
 # ⚖️ Base de Conocimiento Legal (Corpus)
 
-Este directorio almacena la **fuente de verdad** del sistema. Los documentos aquí alojados constituyen el insumo principal para el proceso de *Retrieval Augmented Generation* (RAG).
+Almacena la **fuente de verdad** del sistema. Los documentos aquí alojados constituyen el insumo principal para el proceso de *Retrieval Augmented Generation* (RAG).
 
 ## 📂 Inventario Normativo
 
@@ -13,7 +13,7 @@ Este directorio almacena la **fuente de verdad** del sistema. Los documentos aqu
 
 ## 🧠 Integración con el Sistema RAG
 
-Estos documentos no son estáticos. El microservicio **`backRag`** (ubicado en la carpeta `03`) realiza el siguiente proceso automatizado con los archivos de esta carpeta:
+El microservicio **`backRag`** (ubicado en la carpeta `03`) realiza el siguiente proceso automatizado con los archivos de esta carpeta:
 
 ```mermaid
 graph LR;
