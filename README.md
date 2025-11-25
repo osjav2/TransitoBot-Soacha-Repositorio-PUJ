@@ -1,6 +1,6 @@
 <div align="center">
+<img src="./01_Investigacion_Academica/Assets/baner_transito_o_bot_de_transito.jpg" alt="Banner" width="100%" height="150px">
 <img src="./01_Investigacion_Academica/Assets/logotipoTransitoBot.jpeg" alt="Logo oficial" width="28%">
-<img src="./01_Investigacion_Academica/Assets/baner_transito_o_bot_de_transito.jpg" alt="Banner" width="100%" height="300px">
 <h1>  TuGuía_Vial / TransitoBot</h1>
 <h3>Asistente Inteligente de Normativa Vial para Soacha, Cundinamarca</h3>
 
