@@ -27,8 +27,8 @@ Artefactos de planificación temporal y definición de alcance funcional (Metodo
 | Artefacto | Tipo | Descripción |
 | :--- | :---: | :--- |
 | **[Metodología General](./METODOLOGIA.md)** | 📝 MD | Enfoque de investigación y fases macro. |
-| **[Alcance Funcional (Agile)](./Gestión_TG/ÉpicashistoriasdeUsuario.pdf)** | 🚀 PDF | **Épicas e Historias de Usuario.** Definición de requerimientos. |
-| **[Cronograma de Ejecución](./Gestión_TG/Gráfico_Cronograma_Diagrama_de_Gantt.png)** | 📅 IMG | **Diagrama de Gantt.** Línea de tiempo y fases de desarrollo. |
+| **[Alcance Funcional (Agile)](./Gestion_TG/EpicashistoriasdeUsuario.pdf)** | 🚀 PDF | **Épicas e Historias de Usuario.** Definición de requerimientos. |
+| **[Cronograma de Ejecución](./Gestion_TG/Grafico_Cronograma_Diagrama_de_Gantt.png)** | 📅 IMG | **Diagrama de Gantt.** Línea de tiempo y fases de desarrollo. |
 
 ---
 
@@ -37,12 +37,11 @@ Artefactos de planificación temporal y definición de alcance funcional (Metodo
 
 Alineación con las metas gubernamentales y normativas.
 
-| Documento | Relevancia |
+| Documento | Descripción |
 | :--- | :--- |
-| **[Plan de Desarrollo Soacha](./Soportes_Contexto/PDSoacha_Acuerdo_13_-_2024.pdf)** | **Fuente Primaria.** Acuerdo 2024-2027 (Ver pág. 371 y Meta SPOT-14). |
-| **[Análisis de Metas](./Soportes_Contexto/Puntos%20a%20favor%20soacha%20extraido%20del%20plan%20de%20desarrollo%20municipio.docx)** | Extracción de puntos clave sobre "Ciudad Inteligente". |
-| **[Resolución Ejemplo](./Soportes_Contexto/ResolucionEmbriaguesNOT%20X%20AVISO%20RD019076%20DEL%2019-09-2024%20RESOL%20182%20DEL%2014-06-2024%20LESME%20SEGUNDO%20DE%20ARMAS%201118863952%2040775779%2013-05-2024%20F.pdf)** | Caso real de proceso administrativo de tránsito. |
-
+| **[Plan de Desarrollo](./Soportes_Contexto/PDSoacha_Acuerdo_13_-_2024.pdf)** | Acuerdo Municipal 2024-2027. |
+| **[Análisis de Metas](./Soportes_Contexto/Analisis_Oportunidades.docx)** | Extracción de oportunidades "Ciudad Inteligente". |
+| **[Resolución Tipo](./Soportes_Contexto/Resolucion_Ejemplo_Embriaguez.pdf)** | Ejemplo real de acto administrativo de tránsito. |
 ---
 
 ## 🏙️ 4. Evidencia del Problema (Caso Soacha)
@@ -53,12 +52,12 @@ Recopilación de noticias, estadísticas y sentimiento social que validan la urg
 | Evidencia | Tipo | Hallazgo Principal |
 | :--- | :---: | :--- |
 | **[Ficha Técnica SIMIT](./Soportes_Contexto/Ficha-Tecnica-Soacha.pdf)** | 📊 Oficial | **+75% en comparendos** (9,640 casos en 2023). |
-| **[Reporte Infobae](./Soportes_Contexto/Planee%20su%20viaje_%20reportan%20fuerte%20trancón%20en%20la%20autopista%20Sur%20-%20Infobae.pdf)** | 📰 Noticia | Impacto de la congestión en la Autopista Sur. |
-| **[Radio Nacional](./Soportes_Contexto/¿Cuáles%20son%20las%20problemáticas%20de%20los%20habitantes%20de%20Soacha_%20_%20Radio%20Nacional.pdf)** | 📰 Noticia | Problemáticas reportadas por habitantes. |
-| **[Análisis Movilidad](./Soportes_Contexto/Análisis%20integral%20sobre%20cómo%20se%20transportan%20los%20habitantes%20de%20Soacha%20beneficiará%20a%20más%20de%20700.000%20personas%20_%20Región%20Metropolitana.pdf)** | 📑 Reporte | Estudio de transporte región metropolitana (700k hab). |
-| **[Cierres Viales](./Soportes_Contexto/Atención%20Soacha_%20continúan%20cierres%20viales%20y%20desvíos%20por%20obras%20de%20TransMilenio%20fases%20II%20y%20III.pdf)** | 🚧 Aviso | Contexto de obras y desvíos actuales. |
-| **[Sentimiento Social (Reddit)](./Soportes_Contexto/redditredsocial¿Vale%20la%20pena%20vivir%20en%20Soacha_%20_%20r_Bogota.pdf)** | 💬 Foro | Percepción ciudadana sobre la calidad de vida y movilidad. |
-
+| **[Reporte Infobae](./Soportes_Contexto/Noticia_Infobae_Trancon.pdf)** | 📰 Noticia | Impacto de la congestión en la Autopista Sur. |
+| **[Radio Nacional](./Soportes_Contexto/Noticia_RadioNacional_Problemas.pdf)** | 📰 Noticia | Problemáticas reportadas por habitantes. |
+| **[Análisis Movilidad](./Soportes_Contexto/Reporte_Movilidad_Region.pdf)** | 📑 Reporte | Estudio de transporte región metropolitana (700k hab). |
+| **[Cierres Viales](./Soportes_Contexto/Aviso_Cierres_Transmilenio.pdf)** | 🚧 Aviso | Contexto de obras y desvíos actuales. |
+| **[Sentimiento Social](./Soportes_Contexto/Social_Reddit_Opinion.pdf)** | 💬 Foro | Percepción ciudadana sobre calidad de vida (Reddit). |
+| **[Noticia El Dorado](./Soportes_Contexto/Noticia_ElDorado_Accidentes.pdf)** | 📻 Radio | Contexto sobre accidentalidad vial en Cundinamarca. |
 ---
 
 ### 📌 Nota de Navegación
