@@ -1,28 +1,46 @@
 # 💻 Sistema TransitoBot (Código Fuente)
 
-Esta carpeta contiene el núcleo técnico de la solución, dividido en microservicios independientes.
-
-## 📂 Arquitectura de Microservicios
-
-| Carpeta | Tecnología | Puerto | Función Principal |
-| :--- | :--- | :--- | :--- |
-| **`/frontend`** | React + Vite | `5173` | **Interfaz de Usuario.** Chat moderno y responsivo para el ciudadano. |
-| **`/routerback`** | Python FastAPI | `8080` | **Orquestador.** Cerebro central que recibe el mensaje y decide quién responde. |
-| **`/rasa`** | RASA Open Source | `5005` | **Agente NLU.** Maneja saludos, despedidas e intenciones simples (no legales). |
-| **`/backRag`** | Python + LangChain | `8000` | **Experto Legal.** Motor RAG que busca en la base vectorial (ChromaDB) y genera respuesta con IA. |
+Este directorio contiene la implementación técnica de la solución, estructurada bajo un patrón de **Microservicios** contenerizados. Cada subdirectorio representa un servicio autónomo.
 
 ---
 
-## 🛠️ Flujo de Comunicación (Para Desarrolladores)
+## 🧬 Flujo de Ejecución (Sequence Diagram)
 
-Si estás estudiando este código, el flujo de un mensaje es el siguiente:
+Este diagrama ilustra cómo interactúan los módulos de código cuando un ciudadano realiza una consulta compleja (ej: *"¿De cuánto es la multa por pasarme un semáforo?"*).
 
-1.  **Usuario** escribe en el `frontend`.
-2.  **Frontend** envía petición POST al `routerback`.
-3.  **Routerback** consulta primero a `rasa`:
-    * *¿Tienes confianza alta (>0.8)?* → RASA responde.
-    * *¿Confianza baja?* → Se activa el `backRag`.
-4.  **BackRag** busca en el Código Nacional de Tránsito y responde con Claude/OpenAI.
-5.  **Routerback** devuelve la respuesta final al `frontend`.
+```mermaid
+sequenceDiagram
+    autonumber
+    actor User as 👤 Ciudadano
+    participant Front as 💻 Frontend (React)
+    participant Router as 🚦 RouterBack (FastAPI)
+    participant Rasa as 🤖 RASA (NLU)
+    participant Rag as 🧠 BackRag (RAG)
+    participant Chroma as 🗄️ ChromaDB
 
-> **Nota:** Para ejecutar todo el sistema junto, regresa a la carpeta `04_Despliegue_Arquitectura` y usa Docker Compose.
+    User->>Front: Escribe consulta
+    Front->>Router: POST /api/v1/chat/message
+    
+    Note over Router,Rasa: Paso 1: Intento de Clasificación
+    Router->>Rasa: Enviar texto a NLU
+    Rasa-->>Router: Retorna Intent + Confianza
+    
+    alt Confianza Alta (> 0.8)
+        Router-->>Front: Respuesta Predefinida (RASA)
+    else Confianza Baja (Fallback)
+        Note over Router,Rag: Paso 2: Activación de IA Generativa
+        Router->>Rag: Solicitar contexto legal
+        
+        rect rgb(20, 20, 20)
+            Note right of Rag: Lógica RAG
+            Rag->>Chroma: Búsqueda Vectorial (Embeddings)
+            Chroma-->>Rag: Retorna Artículos Ley 769
+            Rag->>Rag: Generar Prompt + Contexto
+            Rag->>Rag: Invocar Claude AI
+        end
+        
+        Rag-->>Router: Respuesta Generada Natural
+        Router-->>Front: Respuesta Final
+    end
+    
+    Front-->>User: Muestra mensaje
