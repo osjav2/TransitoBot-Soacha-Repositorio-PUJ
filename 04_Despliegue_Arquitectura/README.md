@@ -1,6 +1,6 @@
 # ☁️ Infraestructura y Arquitectura de Despliegue
 
-Este directorio contiene los planos técnicos, guías de contenedores y scripts de orquestación necesarios para poner en marcha **TransitoBot**.
+El directorio contiene los planos técnicos, guías de contenedores y scripts de orquestación necesarios para poner en marcha **TransitoBot**.
 
 ## 📂 Recursos de Ingeniería
 
