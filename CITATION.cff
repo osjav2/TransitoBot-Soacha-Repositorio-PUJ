@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "Si utiliza este software o metodología en su investigación, por favor cítelo como se indica a continuación."
+authors:
+- family-names: "Ramirez Serrano"
+  given-names: "Oscar Javier"
+  orcid: "https://orcid.org/0000-0000-0000-0000" # Opcional: Si tienes ORCID, ponlo aquí
+- family-names: "Poveda"
+  given-names: "Hugo Steven"
+- family-names: "Donald"
+  given-names: "Marc"
+title: "TransitoBot Soacha: Asistente Inteligente de Normativa Vial (RAG + NLU)"
+version: 1.0.0
+date-released: 2025-11-24
+url: "https://github.com/osjav2/TransitoBot-Soacha-Repositorio-PUJ"
+preferred-citation:
+  type: software
+  authors:
+  - family-names: "Ramirez Serrano"
+    given-names: "Oscar Javier"
+  - family-names: "Poveda"
+    given-names: "Hugo Steven"
+  - family-names: "Donald Dieudonne"
+    given-names: "Marc"
+  title: "TransitoBot Soacha: Marco metodológico para Chatbots Normativos"
+  year: 2025
+  publisher: "Pontificia Universidad Javeriana"
+  version: 1.0.0
