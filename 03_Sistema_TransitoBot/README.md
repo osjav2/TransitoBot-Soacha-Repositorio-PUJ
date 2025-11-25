@@ -1,12 +1,12 @@
 # 💻 Sistema TransitoBot (Código Fuente)
 
-Este directorio contiene la implementación técnica de la solución, estructurada bajo un patrón de **Microservicios** contenerizados. Cada subdirectorio representa un servicio autónomo.
+Directorio que contiene la implementación técnica de la solución, estructurada bajo un patrón de **Microservicios** contenerizados. Cada subdirectorio representa un servicio autónomo.
 
 ---
 
 ## 🧬 Flujo de Ejecución (Sequence Diagram)
 
-Este diagrama ilustra cómo interactúan los módulos de código cuando un ciudadano realiza una consulta compleja (ej: *"¿De cuánto es la multa por pasarme un semáforo?"*).
+El diagrama ilustra cómo interactúan los módulos de código cuando un ciudadano realiza una consulta compleja (ej: *"¿De cuánto es la multa por pasarme un semáforo?"*).
 
 ```mermaid
 sequenceDiagram
