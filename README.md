@@ -1,14 +1,7 @@
 <div align="center">
-
-<img src="./01_Investigacion_Academica/Assets/logotipoTransitoBot.jpeg" alt="Logo oficial TransitoBot" width="29%">
-<br/>
-<br/>
-<img src="./01_Investigacion_Academica/Assets/baner_transito_o_bot_de_transito.jpg" alt="Logo oficial TransitoBot" width="29%">
-
-<br/>
-<br/>
-
-<h1>🤖 TuGuía_Vial / TransitoBot</h1>
+<img src="./01_Investigacion_Academica/Assets/baner_transito_o_bot_de_transito.jpg" alt="Banner" width="100%" height="57px">
+<img src="./01_Investigacion_Academica/Assets/logotipoTransitoBot.jpeg" alt="Logo oficial" width="28%">
+<h1>  TuGuía_Vial / TransitoBot</h1>
 <h3>Asistente Inteligente de Normativa Vial para Soacha, Cundinamarca</h3>
 
 <br/>
