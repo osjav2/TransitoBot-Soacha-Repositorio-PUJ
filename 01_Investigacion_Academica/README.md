@@ -1,6 +1,6 @@
 # 📚 Investigación y Fundamentación Teórica
 
-Este directorio consolida el **Estado del Arte**, la gestión del proyecto, la evidencia social y el marco técnico que sustentan el desarrollo de **TransitoBot**.
+Directorio que consolida el **Estado del Arte**, la gestión del proyecto, la evidencia social y el marco técnico que sustentan el desarrollo de **TransitoBot**.
 
 ---
 
