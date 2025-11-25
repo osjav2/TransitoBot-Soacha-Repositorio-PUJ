@@ -28,7 +28,7 @@ Artefactos de planificación temporal y definición de alcance funcional (Metodo
 | :--- | :---: | :--- |
 | **[Metodología General](./METODOLOGIA.md)** | 📝 MD | Enfoque de investigación y fases macro. |
 | **[Alcance Funcional (Agile)](./Gestión_TG/ÉpicashistoriasdeUsuario.pdf)** | 🚀 PDF | **Épicas e Historias de Usuario.** Definición de requerimientos. |
-| **[Cronograma de Ejecución](./Gestión_TG/Gráfico_Cronograma_Diagrama_de_Gantt.png)** | 📅 IMG | **Diagrama de Gantt.** Línea de tiempo y fases de desarrollo. |
+| **[Cronograma de Ejecución](./Gestión_TG/Gráfico_Cronograma_Diagrama_de_Gantt.png)** | 📅 IMG | **Diagrama de Gantt.** Línea de tiempo y fases de desarrollo. |
 
 ---
 
