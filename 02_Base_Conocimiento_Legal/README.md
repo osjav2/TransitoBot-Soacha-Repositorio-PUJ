@@ -17,7 +17,7 @@ Estos documentos no son estáticos. El microservicio **`backRag`** (ubicado en l
 
 ```mermaid
 graph LR;
-    PDF[📄 Código de Tránsito] -->|1. Ingesta & Limpieza| Text[📝 Texto Plano];
-    Text -->|2. Chunking| Chunks[🧩 Fragmentos];
-    Chunks -->|3. Embedding (OpenAI/Cohere)| Vectors[🔢 Vectores];
+    PDF[📄 Código de Tránsito] -->|1. Ingesta| Text[📝 Texto Plano];
+    Text -->|2. Fragmentos| Chunks[🧩 Chunks];
+    Chunks -->|3. Embedding| Vectors[🔢 Vectores];
     Vectors -->|4. Almacenamiento| Chroma[(🗄️ ChromaDB)];
